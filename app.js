@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var path = require('path');
 
 var app = express();
 
@@ -23,7 +24,7 @@ app.use(morgan('dev'));
 //  STATIC ROUTES
 /* ------------------------------------------------------- */
 
-app.use(express.static('./browser'));
+app.use(express.static(path.join(__dirname, 'browser')));
 
 /* ------------------------------------------------------- */
 //  MAIN APPLICATION

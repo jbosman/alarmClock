@@ -4,7 +4,7 @@
 <html>
 	<!-- HEAD -->
 	<head>
-	<title>My Title</title>
+	<title>ALARM CLOCK</title>
 
 	<!-- BOOTSTRAP LINK TAGS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,28 +12,80 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href='/public/css/main.css'>
 	</head>
 
 	<!-- BODY -->
 	<body>
 
+	<!-- NAVBAR -->
+	<nav class='navbar navbar-inverse navbar-static-top'>
+		<div class='container-fluid'>
+			<div class='navbar-header'>
+				<!-- <img class='navbar-brand' alt='ALARM CLOCK' height='50' width='50' src='/public/images/alarmClock.jpeg'> -->
+			</div> <!-- End of navbar-header -->
+		</div>	<!-- End of container fluid -->
+	</nav> <!-- End of nav -->
+
+	
 	<div class="container">
+		<!-- ALARM CLOCK IMAGE -->
 		<div class='row'>
-			<div class='col-md-3'>
-			<h1 class='text-center'>Hello World!</h1>
+
+			<div class='col-md-4 text-right'>
+				<img alt='LEFT-CURTAIN' height='300' width='150' src='/public/images/leftCurtain.jpeg'>
 			</div>
-			<div class='col-md-3'>
-			<h1>Hello World!2</h1>
+
+			<div class='col-md-4 text-center'>
+				<img alt='ALARM-CLOCK' height='300' width='300' src='/public/images/alarmClock.jpeg'>
 			</div>
-			<div class='col-md-3'>
-			<h1>Hello World!3</h1>
+
+			<div class='col-md-4 text-left'>
+				<img alt='RIGHT-CURTAIN' height='300' width='150' src='/public/images/rightCurtain.jpeg'>
 			</div>
-			<div class='col-md-3'>
-			<h1>Hello World!4</h1>
-			</div>
+
 		</div>
-	</div>
+
+		<div class='row'>
+			<!-- ALARMS MENU -->
+				<div class='container-fluid'>
+
+					<!-- Nav tabs -->
+					 <ul class="nav nav-tabs" role="tablist">
+					   <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab" data-toggle="tab">Current Alarms</a></li>
+					   <li role="presentation"><a href="#add" aria-controls="add" role="tab" data-toggle="tab">Add Alarms</a></li>
+					   <li role="presentation"><a href="#reset" aria-controls="reset" role="tab" data-toggle="tab">Reset Alarms</a></li>
+					   <li role="presentation"><a href="#remove" aria-controls="remove" role="tab" data-toggle="tab">Remove Alarms</a></li>
+					 </ul>
+
+					 <!-- Tab panes -->
+					 <div class="tab-content">
+					 <!-- CURRENT ALARMS VIEW -->
+					   <div role="tabpanel" class="tab-pane active" id="current">
+					   	
+					   </div>
+					 <!-- ADD ALARMS VIEW -->
+					   <div role="tabpanel" class="tab-pane" id="add">
+					   	
+					   </div>
+					 <!-- RESET ALARMS VIEW -->
+					   <div role="tabpanel" class="tab-pane" id="reset">
+					   	
+					   </div>
+					 <!-- REMOVE ALARMS VIEW -->
+					   <div role="tabpanel" class="tab-pane" id="remove">
+					   	
+					   </div>
+					 </div>
+					<!-- <div class='navbar-header text-center'>
+						<button type="button" class="btn btn-default navbar-btn">Current Alarms</button>
+						<button type="button" class="btn btn-default navbar-btn">Add Alarms</button>
+						<button type="button" class="btn btn-default navbar-btn">Reset Alarms</button>
+						<button type="button" class="btn btn-default navbar-btn">Remove Alarms</button>
+					</div> End of navbar-header --> 
+				</div>	<!-- End of container fluid -->
+		<div>
+	<div>
 
 	</body>
 	
